@@ -42,23 +42,25 @@ li{
     font-style: italic;
 }
 
-.realce{
+.realce-h1{
     color: #0588c4;
 }
 
-.preco{
+/* OU h1 span {
+    color: #0588c4
+ } */
+
+.realce-p, p strong{
     color: #0588c4;
+    font-weight: bold;
 }
 
-.desconto{
+.realce-italico{
     color: #0588c4;
+    font-style: italic;
 }
 
-.sem-juros{
-    color: #0588c4;
-}
-
-.frete-gratis{
+.realce-underline{
     color: #0588c4;
     text-decoration: underline;
 }
