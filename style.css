@@ -1,45 +1,86 @@
-@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
 
 body{
     font-family: Montserrat, sans-serif
 }
 
+section{
+    padding: 2.4rem;
+}
+
+figure{
+    margin-bottom: 3.2rem;
+}
+
 h1{
-    font-size: 45px;
+    font-size: 4.5rem;
     line-height: 1;
+    margin-bottom: 3.2rem;
+}
+
+h1:first-letter{
+    font-size: 6.4rem;
 }
 
 h2{
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 1.1;
+    margin-bottom: 2.4rem;
 }
 
 h3{
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 1.2;
+    margin-bottom: 1.8rem;
 }
 
 p{
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.4;
+    margin-bottom: 0.6rem;
 }
 
 figcaption{
-    font-size: 12px;
+    font-size: 1.2rem;
     font-style: italic;
+    margin-left: 3.2rem;
+
 }
 
 a{
     color: #c44105;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
     text-decoration: double;
     text-decoration-line: underline;
+    margin-bottom: 2.4rem;
+}
+
+a:hover{
+    color: #0588c4;
+}
+
+hr{
+    display: none;
+}
+
+ul{
+    margin-bottom: 2.4rem;
+    margin-left: 2.4rem;
 }
 
 li{
     color: #035276;
     font-style: italic;
+    margin-bottom: 0.6rem;
 }
 
 .realce-h1{
@@ -55,12 +96,29 @@ li{
     font-weight: bold;
 }
 
+.condicao{
+    display: inline-block;
+    background-color: #035276;
+    color: #fff;
+    box-shadow: 0rem 0rem 1.6rem 0.4rem rgba(0, 0, 0, 0.158);
+    padding: 2.4rem 3.2rem;
+    border-radius: 2rem;
+}
+
 .realce-italico{
-    color: #0588c4;
+    color: #78d4ff;
     font-style: italic;
 }
 
 .realce-underline{
-    color: #0588c4;
+    color: #78d4ff;
     text-decoration: underline;
+}
+
+.botao-whatsapp{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-right: 1rem;
+    padding-top: 1rem;
 }
