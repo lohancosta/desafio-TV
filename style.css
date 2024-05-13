@@ -44,6 +44,9 @@ figure {
   display: flex;
   flex-flow: column;
   align-items: center;
+
+  /* adicionando grid, poderia ter colocado 1 / -1 */
+  grid-row: 1 / span 3; 
 }
 
 figure img {
@@ -84,6 +87,19 @@ section {
   flex-flow: column;
   gap: 3.12rem;
   align-items: center;
+}
+
+section:nth-child(2) {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  row-gap: 3.12rem;
+  column-gap: 3.9rem;
+
+  & h2{
+    grid-column: 1 / -1; /* poderia ser 1 / span 3*/
+    justify-self: center;
+  }
 }
 
 .realce-h1 {
@@ -128,16 +144,20 @@ p strong {
 }
 
 .container-figure {
-  display: flex;
-  gap: 4.88rem;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  column-gap: 4.88rem;
+  row-gap: 3.12rem;
+  justify-items: center;
 }
 
-.container-preco-condicoes {
+/* .container-preco-condicoes {
   display: flex;
   flex-flow: column;
   align-items: center;
   gap: 3.12rem;
-}
+} */
 
 .container-preco,
 .div-condicao {
@@ -146,10 +166,10 @@ p strong {
   gap: 2rem;
 }
 
-.container-listas {
+/* .container-listas {
   display: flex;
   gap: 3.9rem;
-}
+} */
 
 .container-lista {
   display: flex;
